@@ -3,14 +3,14 @@ import 'dart:io';
 void main(){
 
     try {
-      print('This program take 5 numbers of your choice \nand tells you the sum and average of the 5 numbers.');
+      print('This program takes 5 numbers of your choice and\nshows you the sum and average of them.\n');
       double sum = 0;
       List<double> inputList = [];
 
       for (var i = 0; i < 5; i++) {
         stdout.write('Add a number: ');
-        var input = double.parse(stdin.readLineSync()!);
-        inputList.add(input);
+        var userInput = double.parse(stdin.readLineSync()!);
+        inputList.add(userInput);
         sum += inputList[i];
       }
       double average = sum/inputList.length;

@@ -4,5 +4,5 @@ void main(){
     print(i);
     sum += i;
   }
-  print('The sum of 1 - 10 is $sum');
+  print('The sum of 1 through 10 is $sum');
 }
